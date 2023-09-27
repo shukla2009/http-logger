@@ -11,6 +11,6 @@ jobs:
   build_and_push:
     uses: ./.github/workflows/reusable-build-and-push.yml
     with:
-      image_tag: latest
+      image_tag: v1.0.0
       push: true
       upload: false
