@@ -62,7 +62,7 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           tags: ghcr.io/shukla2009/http-logger:${{ inputs.image_tag }}
-          file: Dockerfile.backend
+          file: Dockerfile
           push: ${{ inputs.push }}
           outputs: "${{ env.OUTPUTS }}"
           cache-from: type=local,src=/tmp/.buildx-cache
